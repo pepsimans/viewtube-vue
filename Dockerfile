@@ -22,6 +22,6 @@ RUN yarn install --pure-lockfile --link-duplicates --ignore-optional --non-inter
     yarn modclean -n default:safe -r
 
 ENV NODE_ENV=production
-EXPOSE 8066
+EXPOSE 8080
 
 CMD ["node", "-r", "module-alias/register", "dist/server/main.js"]
